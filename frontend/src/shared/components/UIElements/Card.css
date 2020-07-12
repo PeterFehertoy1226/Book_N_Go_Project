@@ -1,0 +1,17 @@
+.card {
+  position: relative;
+  margin: 0;
+  
+  border-radius: 10px; 
+  overflow: hidden;
+  background: #f4f3f7; 
+  transition-duration: 0.4s;
+}
+.card:hover,
+.card:active{
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+
+  
+  transition-duration: 0.4s;
+  
+};
