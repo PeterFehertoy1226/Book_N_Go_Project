@@ -1,0 +1,45 @@
+.users-list {
+   
+    right:0;
+    list-style: none;
+    
+    padding: 0;
+    width: 100%;
+    
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+  /*  background-color:red; */
+  }
+
+  main {
+    min-height:100%;
+
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .user-main-container {
+    min-width: 100%;
+    min-height: calc(95vh - 3rem);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+  align-items: stretch;
+    
+  }
+
+  .search-field{
+    width:40%;
+    height:100%;
+    height: calc(95vh - 3rem);
+    border-radius: 0px 0px 0px 10px;
+   /* background-color:yellow; */
+
+  }
+
+  .user-field{
+    width:60%;
+    height:100%;
+    height: calc(95vh - 3rem);
+    border-radius: 0px 0px 10px 0px;
+   /* background-color:blue; */
+  }
