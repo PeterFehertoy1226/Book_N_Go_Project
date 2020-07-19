@@ -12,26 +12,28 @@ const NavLinks = props => {
         </li>
         
         <li>
-            <NavLink to="/" exact>Keresés</NavLink>
+            <NavLink to="/" exact>Search Trip</NavLink>
         </li>
         {auth.isLoggedIn && (
         <li>
-            <NavLink to="/u1/places">Profil</NavLink>
+          {/*  <NavLink to={`/${auth.userId}/places`}>My trips</NavLink> */} 
+            <NavLink to='/5f09aab6650dec5604290f2e/places'>My trips</NavLink> 
+            
         </li>
         )}
         {auth.isLoggedIn && (
         <li>
-            <NavLink to="/places/new">Utazás hozzáadás</NavLink>
+            <NavLink to="/places/new">Add trip</NavLink>
         </li>
         )}
         {!auth.isLoggedIn && (
         <li>
-            <NavLink to="/auth">Belépés</NavLink>
+            <NavLink to="/auth">Login</NavLink>
         </li>
         )}
         {auth.isLoggedIn && (
         <li>
-            <NavLink to="/settings">Beállítások</NavLink>
+            <NavLink to="/settings">Settings</NavLink>
         </li>
         )}
         {auth.isLoggedIn && 
